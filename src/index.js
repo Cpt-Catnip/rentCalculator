@@ -1,7 +1,7 @@
 import formatAmount from "./formatAmount.mjs";
 
 const rent = 2500;
-const approxUtilities = 70;
+const approxUtilities = 120;
 const paycheck = 3174.15; // after taxes
 
 const totalRent = (rent + approxUtilities) * 12;
