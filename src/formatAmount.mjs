@@ -6,9 +6,9 @@ const formatAmount = (amount) => {
 
   // inser commas
   let formatted = amount.toFixed(2);
-  for (let i = orderOfMag - 1; i >= 0; i--) {
-    if (!(i % 3)) {
-      const idx = i + 1;
+  for (let tensPlace = 1; tensPlace <= orderOfMag; tensPlace++) {
+    if (!(tensPlace % 3)) {
+      const idx = orderOfMag - tensPlace + 1;
       formatted = formatted.slice(0, idx) + "," + formatted.slice(idx);
     }
   }
